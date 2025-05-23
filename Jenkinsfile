@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven "MavenJenkins"
+    }
     environment {
         SERVICE = 'account-service'
         NAME = "gubscruz/${env.SERVICE}"
